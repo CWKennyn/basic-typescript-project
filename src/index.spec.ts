@@ -8,7 +8,16 @@ describe("Egg tests", function() {
         expect(cookingTime(5)).toEqual(5);
     });
 
+    it("8 eggs", function() {
+        expect(cookingTime(8)).toEqual(5);
+    });
+
     it("10 eggs", function() {
         expect(cookingTime(10)).toEqual(10);
     });
+
+    it("16 eggs", function() {
+        expect(cookingTime(16)).toEqual(10);
+    });
+
 });
