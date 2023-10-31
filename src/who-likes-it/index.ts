@@ -5,6 +5,11 @@ export const likes = (a : string[]) : string => {
         return `${a[0]} likes this`;
     } else if (a.length === 2) {
         return `${a[0]} and ${a[1]} like this`;
+    } else if (a.length === 3) {
+        return `${a[0]}, ${a[1]} and ${a[2]} like this`;
+    } else {
+        const remainingCount = a.length - 2;
+        return`${a[0]}, ${a[1]} and ${remainingCount} others like this`;
     }
     return a.toString();
 
