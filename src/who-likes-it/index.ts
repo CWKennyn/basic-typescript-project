@@ -11,6 +11,4 @@ export const likes = (a : string[]) : string => {
         const remainingCount = a.length - 2;
         return`${a[0]}, ${a[1]} and ${remainingCount} others like this`;
     }
-    return a.toString();
-
 }
