@@ -1,9 +1,9 @@
 export function slicesToName(n: any): any {
-    if (n > 1) {
-        return 'sandwich';
-    } else {
+    if (n < 2 || isNaN(n)) {
         return null;
     }
+
+    return 'sandwich';
 }
 
 export function nameToSlices(name: any): any {
