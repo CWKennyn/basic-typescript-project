@@ -1,4 +1,6 @@
 export function hero(bullets: number, dragons: number): boolean {
-    return bullets % dragons === 0;
+    const calculateTwoBulletsPerDragonToOneBullet = bullets / 2;
+    return calculateTwoBulletsPerDragonToOneBullet >= dragons;
+
 
 }
